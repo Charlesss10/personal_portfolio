@@ -1,7 +1,5 @@
 header {
-  margin-top: 2rem;
   height: 2.875rem;
-
 }
 
 .container {
@@ -13,16 +11,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .navbar .mobile-logo {
   display: none;
+  cursor: pointer;
 }
 
 .navbar .logo {
-  width: 3.729375rem;
-  height: 3.125rem;
+  /*width: 3.729375rem;
+  height: 3.125rem;*/
+  width: 7rem;
+  height: 7rem;
   cursor: pointer;
 }
 
@@ -32,7 +32,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links li {
@@ -61,7 +64,7 @@ header {
 }
 
 .hero {
-  margin-top: 2.125rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -142,10 +145,12 @@ header {
   color: #909090;
 }
 
-.CharlesTech span {
+.CharlesTech button {
+  background-color: transparent;
   font-size: 0.6875rem;
   line-height: 1rem;
   color: #d7d7d7;
+  border: none;
   border-inline: 1px solid #d7d7d7;
   padding-inline: 0.5rem;
 }
@@ -292,6 +297,10 @@ header {
   height: 20.0625rem;
 }
 
+.grid-port .grid-col:hover {
+  opacity: 0.7;
+}
+
 .grid-port .col1 {
   background: url(./images/project.png) center / cover no-repeat;
   ;
@@ -317,6 +326,17 @@ form {
 }
 
 form input {
+  padding: .5rem 1rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+  width: 60%;
+}
+
+form textarea {
+  font-family: "Inter", sans-serif;
   padding: .5rem 1rem;
   background-color: transparent;
   color: black;
@@ -372,6 +392,22 @@ footer {
   font-size: 0.6875rem;
   line-height: 1rem;
   color: #d7d7d7;
+}
+
+.scroll-up a {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation-delay: 0.8s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -474,9 +510,21 @@ footer {
   form input {
     width: 90%;
   }
+
+  form textarea {
+    width: 90%;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .info h1 {
+    color: black;
+  }
+
+  .info h2 {
+    color: black;
+  }
+
   .grid-about {
     grid-template-columns: 1fr;
   }
@@ -490,6 +538,10 @@ footer {
   }
 
   form input {
+    width: 100%;
+  }
+
+  form textarea {
     width: 100%;
   }
 }
