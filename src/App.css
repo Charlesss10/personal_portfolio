@@ -5,6 +5,7 @@ header {
 .container {
   width: min(90%, 1120px);
   margin-inline: auto;
+  position: sticky;
 }
 
 .navbar {
@@ -353,6 +354,7 @@ form button {
   border: none;
   border-inline: 2px solid black;
   font-size: 1.5rem;
+  color: black;
 }
 
 form #comment {
