@@ -11,19 +11,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .navbar .mobile-logo {
   display: none;
   cursor: pointer;
+  width: 10.10rem;
 }
 
 .navbar .logo {
-  /*width: 3.729375rem;
-  height: 3.125rem;*/
-  width: 7rem;
-  height: 7rem;
+  /*width: 3.729375rem;*/
+  height: 3.125rem;
   cursor: pointer;
+  width: 5.10rem;
 }
 
 .nav-links {
@@ -517,6 +518,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    margin-top: 0px;
+  }
+
+  .navbar .mobile-logo {
+    width: 3.10rem;
+  }
+  
   .info h1 {
     color: black;
   }

@@ -17,7 +17,7 @@ export default function Header() {
             </div>
             <nav className="container navbar">
                 <img src={logo} alt="logo" className="logo" />
-                <img src={logo_2} alt="logo" className="mobile-logo" />
+                <img src={logo_2} alt="logo_2" className="mobile-logo"/>
                 <ul className="nav-links" data-visible={isVisible}>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
