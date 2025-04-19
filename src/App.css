@@ -5,7 +5,6 @@ header {
 .container {
   width: min(90%, 1120px);
   margin-inline: auto;
-  position: sticky;
 }
 
 .navbar {
