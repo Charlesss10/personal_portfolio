@@ -11,7 +11,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 
 .navbar .mobile-logo {
@@ -23,7 +22,6 @@ header {
 .navbar .logo {
   /*width: 3.729375rem;*/
   height: 6.525rem;
-  cursor: pointer;
   width: 10.10rem;
 }
 
@@ -49,6 +47,10 @@ header {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
+}
+
+.nav-links li a:hover {
+  color: rgba(255, 255, 255, 0.425);
 }
 
 .nav-links .btn {
@@ -125,9 +127,13 @@ header {
 }
 
 .contact-me i {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   padding: 0.625rem .75rem;
   border-radius: 5px;
+}
+
+.contact-me i:hover{
+  color: gray;
 }
 
 .CharlesTech {
@@ -154,6 +160,10 @@ header {
   border: none;
   border-inline: 1px solid #d7d7d7;
   padding-inline: 0.5rem;
+}
+
+.CharlesTech button:hover{
+  color: gray;
 }
 
 .hamburger {
@@ -356,6 +366,10 @@ form button {
   color: black;
 }
 
+form button:hover{
+  color: gray;
+}
+
 form #comment {
   height: 100px;
 }
@@ -390,6 +404,10 @@ footer {
   gap: 1rem;
 }
 
+.social i:hover {
+  color: rgba(255, 255, 255, 0.425);
+}
+
 .footer-info p {
   font-size: 0.6875rem;
   line-height: 1rem;
@@ -412,6 +430,10 @@ footer {
   }
 }
 
+.scroll-up a:hover {
+  color: rgba(255, 255, 255, 0.425);
+}
+
 @media (max-width: 768px) {
   header {
     margin-top: 0;
@@ -420,10 +442,12 @@ footer {
   }
 
   .navbar {
-    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: flex-start;
+    height: 100%;
   }
-
+  
   .navbar .logo {
     display: none;
   }

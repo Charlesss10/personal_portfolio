@@ -16,8 +16,8 @@ export default function Header() {
                 <i className="fa-solid fa-xmark" data-visible={isVisible}></i>
             </div>
             <nav className="container navbar">
-                <img src={logo} alt="logo" className="logo" />
-                <img src={logo_2} alt="logo_2" className="mobile-logo"/>
+                <a href="/#"><img src={logo} alt="logo" className="logo" /></a>
+                <a href="/#"><img src={logo_2} alt="logo_2" className="mobile-logo"/></a>
                 <ul className="nav-links" data-visible={isVisible}>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>

@@ -3,7 +3,7 @@ export default function Footer() {
         <footer >
             <div className="container footer-info ">
                 <div className="scroll-up">
-                    <a href="#"><i className="fas fa-angle-up"></i></a>
+                    <a href="/#"><i className="fas fa-angle-up"></i></a>
                     <h6>BACK TO TOP</h6>
                 </div>
                 <div className="social">
