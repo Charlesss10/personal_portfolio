@@ -22,9 +22,9 @@ header {
 
 .navbar .logo {
   /*width: 3.729375rem;*/
-  height: 3.125rem;
+  height: 6.525rem;
   cursor: pointer;
-  width: 5.10rem;
+  width: 10.10rem;
 }
 
 .nav-links {
@@ -448,6 +448,19 @@ footer {
     border-top: 1px solid #d7d7d7;
     padding-top: 2rem;
     gap: 2rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links li a:hover {
+    color: rgba(255, 255, 255, 0.425);
   }
 
   .nav-links .btn {

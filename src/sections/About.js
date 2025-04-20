@@ -11,8 +11,8 @@ export default function About(){
               and I’ve developed a strong interest in full-stack development, embedded systems, and the use of AI technologies.
             </p>
             <p>
-              Working in different academic environments across Europe and holding various student positions—ranging
-              from Data Analyst to Full Stack Developer—has helped me grow both technically and personally.
+              Working in different academic environments across Europe and holding various student positions ranging
+              from Data Analyst to Full Stack Developer has helped me grow both technically and personally.
               These experiences have sharpened my problem-solving skills, adaptability, and passion for continuous learning.
             </p>
             <p>

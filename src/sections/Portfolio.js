@@ -10,8 +10,8 @@ export default function Portfolio() {
                 </div>
             </div>
             <div className="grid-port">
-                <a href="https://www.charlesaluminium.com/" target="_blank" rel="noreferrer"><div className="charles-aluminium"><div class="grid-col col1" ></div></div></a>
-                <a href="https://My-Simpsons-Quotes-App.vercel.app/" target="_blank" rel="noreferrer"><div className="simpsons-quote" ><div class="grid-col col2" ></div></div></a>
+                <a href="https://www.charlesaluminium.com/" target="_blank" rel="noreferrer"><div className="charles-aluminium"><div className="grid-col col1" ></div></div></a>
+                <a href="https://My-Simpsons-Quotes-App.vercel.app/" target="_blank" rel="noreferrer"><div className="simpsons-quote" ><div className="grid-col col2" ></div></div></a>
             </div>
             <div className="grid-header">
                 <p>And many more to come!</p>
