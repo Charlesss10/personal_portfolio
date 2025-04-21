@@ -436,11 +436,13 @@ footer {
 
 @media (max-width: 768px) {
   header {
+    margin-top: 0;
     background-color: black;
     height: 4rem;
   }
 
   .navbar {
+    margin-top: 0px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -471,7 +473,6 @@ footer {
     border-top: 1px solid #d7d7d7;
     padding-top: 2rem;
     gap: 2rem;
-    margin-top: 270px;
   }
 
   .nav-links li {
