@@ -370,10 +370,6 @@ form button:hover{
   color: gray;
 }
 
-form #comment {
-  height: 100px;
-}
-
 footer a {
   text-decoration: none;
   color: #fff;

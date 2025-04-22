@@ -19,7 +19,7 @@ export default function Hero() {
                             Data Analyst</h6>
                     </div>
                     <div className="contact-me">
-                        <a href={process.env.WHATSAPP_URL} target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=4915753003416&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.linkedin.com/in/charles-eboson"><i className="fa-brands fa-linkedin" target="_blank"></i></a>
                         <a href="https://github.com/Charlesss10" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>
                     </div>

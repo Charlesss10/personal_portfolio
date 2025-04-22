@@ -9,6 +9,7 @@ export default function Contact() {
         email: "",
         message: "",
     });
+    const formRef = React.useRef();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -26,6 +27,7 @@ export default function Contact() {
 
             if (response.data.success) {
                 alert(response.data.message || "Message sent successfully!");
+                formRef.current.reset();
                 setFormData({ name: "", phone: "", email: "", message: "" });
             } else {
                 alert("Failed to send message. Please try again.");
@@ -43,7 +45,7 @@ export default function Contact() {
                 <p>Interested in more details? Fill out the form to get in touch.</p>
                 <img src={seperator_black} alt="" />
             </div>
-            <form onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit}>
                 <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME*" onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                 <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL*" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                 <input type="text" name="phone" id="phone" placeholder=" ENTER YOUR PHONE*" onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
