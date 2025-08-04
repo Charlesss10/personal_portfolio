@@ -130,6 +130,7 @@ header {
   background-color: #c4c4c4;
   padding: 0.625rem .75rem;
   border-radius: 5px;
+  width: 40px;
 }
 
 .contact-me i:hover{
