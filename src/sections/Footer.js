@@ -8,7 +8,6 @@ export default function Footer() {
                 </div>
                 <div className="social">
                     <a href="https://github.com/Charlesss10" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/charles_eboson" target="_blank" rel="noreferrer"><i className="fab fa-instagram" ></i></a>
                     <a href="https://www.linkedin.com/in/charles-eboson" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
                 </div>
                 <p>

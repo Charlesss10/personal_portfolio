@@ -18,10 +18,8 @@ export default function Hero() {
                         <h6>Software Engineer</h6>
                     </div>
                     <div className="contact-me">
-                        {/*<a href={`https://api.whatsapp.com/send/?phone=${process.env.REACT_APP_PHONE_NUMBER}&text&type=phone_number&app_absent=0`} target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp"></i></a>*/}
                         <a href="https://www.linkedin.com/in/charles-eboson"><i className="fa-brands fa-linkedin" target="_blank"></i></a>
                         <a href="https://github.com/Charlesss10" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" ></i></a>
-                        <a href="https://www.instagram.com/charles_eboson" target="_blank" rel="noreferrer"><i className="fab fa-instagram" ></i></a>
                     </div>
                 </div>
                 <div className="person-img">
