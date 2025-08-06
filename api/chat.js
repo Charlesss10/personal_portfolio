@@ -10,13 +10,23 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const allowedOrigins = ['http://localhost:3000', 'https://www.charles-eboson.com/'];
+    const allowedOrigins = [
+        'https://www.charles-eboson.com',
+    ];
+
     const origin = req.headers.origin || req.headers.referer || '';
-    if (!allowedOrigins.includes(origin)) {
+    const isDev = process.env.NODE_ENV === 'development';
+
+    const isVercelPreview = origin.includes('.vercel.app');
+
+    if (!isDev && !isVercelPreview && !allowedOrigins.some(o => origin.startsWith(o))) {
         return res.status(403).json({ error: 'Forbidden' });
     }
 
     const { messageHistory } = req.body;
+
+    // Log request origin
+    console.log('Request origin:', origin);
 
     // Log user input + timestamp
     console.log("User query:", messageHistory[messageHistory.length - 1]?.content || '[No input]');
