@@ -9,6 +9,7 @@ import Skills from './sections/Skills.js';
 import Portfolio from './sections/Portfolio.js';
 import Contact from './sections/Contact.js';
 import Footer from './sections/Footer.js';
+import ChatWidget from './components/ChatWidget.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
