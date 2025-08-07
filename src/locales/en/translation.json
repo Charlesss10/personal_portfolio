@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "about": "About me",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact Me"
+    },
+    "hero": {
+        "greeting": "Hi, I am",
+        "name": "Charles",
+        "title": "Software Engineer"
+    },
+    "charlesTech": {
+        "title": "CharlesTech Solutions",
+        "description": "I’m CharlesTech Solutions, a personal brand built around delivering top-tier IT services, including website and software development. With a passion for innovation and efficiency, I actively integrate Large Language Models (LLMs) into my workflow to simplify development. In the future, I plan on expanding into embedded systems application development and computer hardware maintenance, continuing to grow the range of solutions I offer. You can connect with me on LinkedIn, whether you're looking to collaborate or need my services.",
+        "button": "READ MORE"
+    },
+    "about": {
+        "header": "ABOUT ME",
+        "p1": "My name is Charles Eboson, and I’m currently pursuing a BSc. in Information Engineering at the University of Applied Sciences in Hamburg. Over the past few years, I’ve gained hands-on experience with programming languages like C, Java, and JavaScript, and I’ve developed a strong interest in full-stack development, embedded systems, and the use of AI technologies.",
+        "p2": "Working in different academic environments across Europe and holding various student positions ranging from Data Analyst to Full Stack Developer has helped me grow both technically and personally. These experiences have sharpened my problem-solving skills, adaptability, and passion for continuous learning.",
+        "p3": "Outside of tech, I enjoy diving into AI research and watching football. If you'd like to learn more about my work or connect, feel free to check out my GitHub or LinkedIn!",
+        "development_title": "DEVELOPMENT",
+        "development_text": "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.",
+        "maintenance_title": "MAINTENANCE",
+        "maintenance_text": "I can keep your site running smoothly with regular updates, security checks, and fixes. Whether it’s ongoing support or occasional tweaks, I’ll make sure everything stays up-to-date and working as it should."
+    },
+    "skills": {
+        "header": "SKILLS",
+        "using_now": "USING NOW:",
+        "learning_now": "LEARNING NOW:",
+        "other_skills": "OTHER SKILLS:",
+        "german": "German"
+    },
+    "portfolio": {
+        "title": "PROJECTS",
+        "footer": "And many more to come!"
+    },
+    "contact": {
+        "title": "CONTACT",
+        "description": "Interested in more details? Fill out the form to get in touch.",
+        "name_placeholder": "ENTER YOUR NAME*",
+        "email_placeholder": "ENTER YOUR EMAIL*",
+        "phone_placeholder": "ENTER YOUR PHONE*",
+        "message_placeholder": "ENTER YOUR MESSAGE*",
+        "submit": "SUBMIT",
+        "success": "Message sent successfully!",
+        "fail": "Failed to send message. Please try again.",
+        "error": "An error occurred. Please try again."
+    },
+    "footer": {
+        "back_to_top": "BACK TO TOP",
+        "credit": "UI/UX design inspired by Tomasz Gajda (CC BY 4.0)",
+        "rights": "All rights reserved."
+    },
+    "chat": {
+        "header": "AI Assistant",
+        "placeholder": "Ask me anything about Charles...",
+        "too_long": "Too many tokens. Please shorten your message.",
+        "profanity": "Please keep it respectful.",
+        "error": "⚠️ Something went wrong."
+    }
+}

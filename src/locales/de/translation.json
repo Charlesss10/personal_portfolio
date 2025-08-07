@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "greeting": "Hallo, ich bin",
+        "name": "Charles",
+        "title": "Softwareentwickler"
+    },
+    "charlesTech": {
+        "title": "CharlesTech Solutions",
+        "description": "Ich bin CharlesTech Solutions – eine persönliche Marke, die sich auf hochwertige IT-Dienstleistungen wie Website- und Softwareentwicklung spezialisiert hat. Mit einer Leidenschaft für Innovation und Effizienz integriere ich aktiv große Sprachmodelle (LLMs) in meinen Workflow, um die Entwicklung zu vereinfachen. Zukünftig plane ich, mich auch auf Embedded-Systems-Anwendungen und Wartung von Computerhardware zu konzentrieren, um mein Leistungsspektrum weiter auszubauen. Du kannst dich gerne über LinkedIn mit mir vernetzen – ob für eine Zusammenarbeit oder um meine Dienste in Anspruch zu nehmen.",
+        "button": "MEHR ERFAHREN"
+    },
+    "about": {
+        "header": "ÜBER MICH",
+        "p1": "Ich heiße Charles Eboson und studiere derzeit Information Engineering (B.Sc.) an der Hochschule für Angewandte Wissenschaften in Hamburg. In den letzten Jahren habe ich praktische Erfahrung mit Programmiersprachen wie C, Java und JavaScript gesammelt und ein starkes Interesse an Full-Stack-Entwicklung, eingebetteten Systemen und dem Einsatz von KI-Technologien entwickelt.",
+        "p2": "Meine Arbeit in verschiedenen akademischen Umgebungen in Europa sowie meine Rollen als Data Analyst und Full Stack Developer haben mich sowohl technisch als auch persönlich wachsen lassen. Diese Erfahrungen haben meine Problemlösungsfähigkeiten, Anpassungsfähigkeit und Leidenschaft fürs Lernen gestärkt.",
+        "p3": "Abseits der Technik beschäftige ich mich gern mit KI-Forschung und schaue Fußball. Wenn du mehr über meine Arbeit erfahren oder dich vernetzen möchtest, schau gerne auf GitHub oder LinkedIn vorbei!",
+        "development_title": "ENTWICKLUNG",
+        "development_text": "Ich kann die Website nach deinen Bedürfnissen und Vorschlägen gestalten. Ich kann sie auch von Grund auf neu entwerfen und dich während des Projekts beraten.",
+        "maintenance_title": "WARTUNG",
+        "maintenance_text": "Ich halte deine Website mit regelmäßigen Updates, Sicherheitsprüfungen und Fehlerbehebungen am Laufen. Egal ob kontinuierlicher Support oder gelegentliche Anpassungen – ich sorge dafür, dass alles aktuell und funktionsfähig bleibt."
+    },
+    "skills": {
+        "header": "FÄHIGKEITEN",
+        "using_now": "AKTUELL IM EINSATZ:",
+        "learning_now": "DERZEIT IN LERNUNG:",
+        "other_skills": "WEITERE FÄHIGKEITEN:",
+        "german": "Deutsch"
+    },
+    "portfolio": {
+        "title": "PROJEKTE",
+        "footer": "Und viele weitere folgen bald!"
+    },
+    "contact": {
+        "title": "KONTAKT",
+        "description": "Interessiert an weiteren Informationen? Fülle das Formular aus, um Kontakt aufzunehmen.",
+        "name_placeholder": "DEIN NAME*",
+        "email_placeholder": "DEINE E-MAIL*",
+        "phone_placeholder": "DEINE TELEFONNUMMER*",
+        "message_placeholder": "DEINE NACHRICHT*",
+        "submit": "ABSENDEN",
+        "success": "Nachricht erfolgreich gesendet!",
+        "fail": "Nachricht konnte nicht gesendet werden. Bitte versuche es erneut.",
+        "error": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    },
+    "footer": {
+        "back_to_top": "ZURÜCK NACH OBEN",
+        "credit": "UI/UX-Design inspiriert von Tomasz Gajda (CC BY 4.0)",
+        "rights": "Alle Rechte vorbehalten."
+    },
+    "chat": {
+        "header": "KI-Assistent",
+        "placeholder": "Frag mich alles über Charles...",
+        "too_long": "Zu viele Tokens. Bitte kürze deine Nachricht.",
+        "profanity": "Bitte bleibe respektvoll.",
+        "error": "⚠️ Etwas ist schiefgelaufen."
+    }
+}

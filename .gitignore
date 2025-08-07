@@ -24,3 +24,4 @@ yarn-error.log*
 expenses.xlsx
 ai-chat-bot/AI_Chat_Assistant_Roadmap.docx
 .gitignore
+template/

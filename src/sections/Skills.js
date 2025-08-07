@@ -8,16 +8,19 @@ import java from '../images/java.png';
 import german from '../images/german.png';
 import gcp from '../images/gcp.png';
 import aws from '../images/aws.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Skills() {
+    const { t } = useTranslation();
+
     return (
         <section className="skills container" id="skills">
             <div className="header-info">
-                <h4>SKILLS</h4>
-
+                <h4>{t('skills.header')}</h4>
             </div>
+
             <div className="using-now ">
-                <h4>USING NOW:</h4>
+                <h4>{t('skills.using_now')}</h4>
                 <div className="grid-skills">
                     <div className="grid-item item1">
                         <img src={c} alt="c" />
@@ -44,10 +47,10 @@ export default function Skills() {
                         <h6>SQL</h6>
                     </div>
                 </div>
-
             </div>
+
             <div className="learning-now ">
-                <h4>LEARNING NOW:</h4>
+                <h4>{t('skills.learning_now')}</h4>
                 <div className="grid-skills">
                     <div className="grid-item item1">
                         <img src={html} alt="html" />
@@ -58,23 +61,21 @@ export default function Skills() {
                         <h6>GCP</h6>
                     </div>
                 </div>
-
             </div>
+
             <div className="other-skills ">
-                <h4>OTHER SKILLS:</h4>
+                <h4>{t('skills.other_skills')}</h4>
                 <div className="grid-skills">
                     <div className="grid-item item1">
                         <img src={german} alt="german" />
-                        <h6>German</h6>
+                        <h6>{t('skills.german')}</h6>
                     </div>
                     <div className="grid-item item1">
                         <img src={aws} alt="aws" />
                         <h6>AWS</h6>
                     </div>
                 </div>
-
             </div>
-
         </section>
     );
 }

@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { Bot, Send } from 'lucide-react';
 import { Filter } from 'bad-words';
+import { useTranslation } from 'react-i18next';
 
 const ChatWidget = () => {
+    const { t } = useTranslation();
     const [open, setOpen] = useState(false);
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
@@ -45,46 +47,44 @@ const ChatWidget = () => {
     const sendMessage = async () => {
         if (!input.trim()) return;
 
-        // Filter out long inputs (Max input token: 500)
         const estimateTokens = (text) => Math.ceil(text.length / 4);
         const estimated = estimateTokens(input);
         if (estimated > 500) {
-            alert("Too many tokens. Please shorten your message.");
+            alert(t('chat.too_long'));
             return;
         }
 
-        // Filter out bad words
         const filter = new Filter();
         if (filter.isProfane(input)) {
-            alert("Please keep it respectful.");
+            alert(t('chat.profanity'));
             return;
         }
 
         const userMsg = { role: 'user', content: input };
         const updatedMessages = [...messages, userMsg];
-
-        // Show typing indicator
         setMessages([...updatedMessages, { role: 'assistant', content: '...' }]);
         setInput('');
 
         try {
-            const res = await fetch('/api/chat', {
+            const res = await fetch('/api/chat-rag', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    messageHistory: updatedMessages.slice(-8) // Keep conversation short to limit tokens
+                    messageHistory: updatedMessages.slice(-8)
                 })
             });
 
             const data = await res.json();
 
-            // Replace '...' with real reply
             setMessages([
                 ...updatedMessages,
                 { role: 'assistant', content: data.reply }
             ]);
         } catch (err) {
-            setMessages([...updatedMessages, { role: 'assistant', content: '⚠️ Something went wrong.' }]);
+            setMessages([
+                ...updatedMessages,
+                { role: 'assistant', content: t('chat.error') }
+            ]);
         }
     };
 
@@ -99,7 +99,7 @@ const ChatWidget = () => {
             </div>
 
             <div className={`chat-box ${open ? 'open' : ''}`} ref={chatRef}>
-                <div className="chat-header">AI Assistant</div>
+                <div className="chat-header">{t('chat.header')}</div>
                 <div className="chat-body" ref={chatBodyRef}>
                     {messages.map((msg, idx) => (
                         <div key={idx} className={`chat-message ${msg.role}`}>
@@ -113,7 +113,7 @@ const ChatWidget = () => {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={handleKeyDown}
-                        placeholder="Ask me anything about Charles..."
+                        placeholder={t('chat.placeholder')}
                     />
                     <button className="send-button" onClick={sendMessage}>
                         <Send size={18} color="black" />
