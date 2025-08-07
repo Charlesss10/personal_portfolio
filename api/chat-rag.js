@@ -1,5 +1,7 @@
 import pdfParse from 'pdf-parse';
 import { RateLimiterMemory } from 'rate-limiter-flexible';
+import path from 'path';
+import fs from 'fs';
 
 const limiter = new RateLimiterMemory({ points: 5, duration: 60 });
 
@@ -17,14 +19,9 @@ export default async function handler(req, res) {
   }
 
   // Extract text from PDF
-  const pdfUrl = `https://${req.headers.host}/cv_eboson_charles.pdf`;
-  console.log('Fetching PDF from:', pdfUrl);
-  const response = await fetch(pdfUrl);
-  if (!response.ok) {
-    throw new Error('Failed to fetch PDF from public directory');
-  }
-  const buffer = await response.arrayBuffer();
-  const { text } = await pdfParse(Buffer.from(buffer));
+  const pdfPath = path.resolve(process.cwd(), 'public', 'cv_eboson_charles.pdf');
+  const buffer = fs.readFileSync(pdfPath);
+  const { text } = await pdfParse(buffer);
 
   // Split into sentences
   const sentences = text.match(/[^.!?\n]+[.!?\n]/g)?.map(s => s.trim()) || [];
