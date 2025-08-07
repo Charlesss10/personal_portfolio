@@ -17,7 +17,8 @@ export default async function handler(req, res) {
   }
 
   // Extract text from PDF
-  const pdfUrl = `${req.headers.host?.startsWith('localhost') ? 'http' : 'https'}://${req.headers.host}/cv_eboson_charles.pdf`;
+  const pdfUrl = `https://${req.headers.host}/cv_eboson_charles.pdf`;
+  console.log('Fetching PDF from:', pdfUrl);
   const response = await fetch(pdfUrl);
   if (!response.ok) {
     throw new Error('Failed to fetch PDF from public directory');
