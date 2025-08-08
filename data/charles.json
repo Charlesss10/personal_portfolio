@@ -1,0 +1,97 @@
+{
+    "name": "Charles Eboson",
+    "birthDate": "2002-10-02",
+    "email": "ebosonc@gmail.com",
+    "phone": "+49 157 5300 3416",
+    "location": "Hamburg, Germany",
+    "github": "https://github.com/Charlesss10",
+    "portfolio": "https://www.charles-eboson.com/",
+    "certificates": [
+        "HAW LSL certificate of recognition",
+        "West African Secondary School Leaving Certificate"
+    ],
+    "interests": [
+        "AI",
+        "Technology",
+        "Programming",
+        "Football"
+    ],
+    "languages": {
+        "english": "Native",
+        "german": "Intermediate (B1)"
+    },
+    "education": [
+        {
+            "institution": "University of Applied Sciences",
+            "location": "Hamburg, Germany",
+            "degree": "BSc. Information Engineering",
+            "start": "09.2022",
+            "end": "Present"
+        },
+        {
+            "institution": "Hallel College Secondary School",
+            "location": "Port Harcourt, Nigeria",
+            "degree": "West African Secondary School Leaving Certificate",
+            "start": "09.2013",
+            "end": "08.2019"
+        }
+    ],
+    "workExperience": [
+        {
+            "role": "Working Student - Data Researcher",
+            "company": "Kordiam GmbH",
+            "location": "Hamburg",
+            "start": "10.2023",
+            "end": "Present",
+            "tasks": [
+                "Research of company and personal data from public sources",
+                "Automation of data analysis using APIs",
+                "Preparation and import of data into CRM"
+            ]
+        },
+        {
+            "role": "Working Student - Full Stack Developer",
+            "company": "NIPSILD GmbH",
+            "location": "Hamburg",
+            "start": "05.2024",
+            "end": "08.2024",
+            "tasks": [
+                "Frontend and backend maintenance of web app",
+                "React and Yarn used",
+                "Deployed using AWS Amplify"
+            ]
+        },
+        {
+            "role": "Software Construction Tutor",
+            "company": "University of Applied Sciences",
+            "location": "Hamburg",
+            "start": "05.2023",
+            "end": "12.2023",
+            "tasks": [
+                "Conducted tutorials in C programming for students"
+            ]
+        },
+        {
+            "role": "Junior Computer/Electronics Technician",
+            "company": "Charles Aluminium",
+            "location": "Port Harcourt, Nigeria",
+            "start": "01.2020",
+            "end": "07.2021",
+            "tasks": [
+                "Provided software/hardware tech support",
+                "Involved in roofing underlayment manufacturing research"
+            ]
+        }
+    ],
+    "skills": [
+        "Microsoft Office 365",
+        "C",
+        "Java",
+        "LaTeX",
+        "AWS",
+        "Google Cloud Platform",
+        "MySQL",
+        "React",
+        "Yarn"
+    ]
+}
