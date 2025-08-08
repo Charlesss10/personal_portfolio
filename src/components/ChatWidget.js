@@ -66,7 +66,7 @@ const ChatWidget = () => {
         setInput('');
 
         try {
-            const res = await fetch('/api/chat-rag', {
+            const res = await fetch('/api/chat-personal', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -81,6 +81,7 @@ const ChatWidget = () => {
                 { role: 'assistant', content: data.reply }
             ]);
         } catch (err) {
+            console.error('Chat API error:', err);
             setMessages([
                 ...updatedMessages,
                 { role: 'assistant', content: t('chat.error') }
