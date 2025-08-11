@@ -7,10 +7,10 @@ export default function Hero() {
 
     return (
         <section className="hero">
-            <div className="bg-img">
-                <img src={bg} alt="" />
-            </div>
             <div className="hero-top container">
+                <div className="bg-img">
+                    <img src={bg} alt="" />
+                </div>
                 <div className="content">
                     <div className="info">
                         <h1>{t('hero.greeting')}</h1>

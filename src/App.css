@@ -669,8 +669,6 @@ footer {
     right: 0;
     height: auto;
     margin: 0;
-    width: 100vw;
-    max-width: 100vw;
     background-color: #1c1918;
     flex-direction: column;
     align-items: center;
@@ -710,16 +708,20 @@ footer {
   }
 
   .hamburger {
-    display: block;
     position: absolute;
     right: 5%;
     top: 1.2rem;
-    z-index: 101;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
   }
 
   .hamburger i {
     font-size: 1.5rem;
     color: #fff;
+    pointer-events: none;
   }
 
   .hamburger i[data-visible="false"] {

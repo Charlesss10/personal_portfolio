@@ -20,13 +20,22 @@ export default async function handler(req, res) {
   const raw = fs.readFileSync(profilePath, 'utf-8');
   const profile = JSON.parse(raw);
 
+  // calculate dynamic age
+  const birthDate = new Date(profile.birthDate);
+  const today = new Date();
+  const hasBirthdayPassed =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+  const age = today.getFullYear() - birthDate.getFullYear() - (hasBirthdayPassed ? 0 : 1);
+
   const context = `
 You are an assistant that answers questions about Charles Eboson. Here is his profile:
 
 - Name: ${profile.name}
-- Birth Date: ${profile.birthDate}
+- Birth Date: ${profile.birthDate} (Age: ${age}) 
 - Location: ${profile.location}
 - Email: ${profile.email}
+- Phone: ${profile.phone}
 - GitHub: ${profile.github}
 - Languages: English (${profile.languages.english}), German (${profile.languages.german})
 - Skills: ${profile.skills.join(', ')}

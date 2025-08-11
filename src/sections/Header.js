@@ -1,6 +1,6 @@
 import logo from '../images/logo.png';
 import logo_2 from '../images/logo_2.png';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ export default function Header() {
     const { i18n, t } = useTranslation(); // Add translation hook
     const navigate = useNavigate();
     const location = useLocation();
+    const navRef = useRef(null);
 
     const toggleNavbar = () => {
         setIsVisible(!isVisible);
@@ -27,9 +28,23 @@ export default function Header() {
         navigate(newPath);
     };
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsVisible(false); // Close the menu when clicked outside
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [navRef, setIsVisible]);
+
     return (
         <header>
-            <nav className="container navbar">
+            <nav className="container navbar" ref={navRef}>
                 <div className="nav-wrapper">
                     {/* Language Switcher */}
                     <div className="language-switcher">
@@ -48,7 +63,7 @@ export default function Header() {
                     </div>
 
                     {/* Hamburger */}
-                    <div className="hamburger" onClick={toggleNavbar} style={{ cursor: 'pointer' }}>
+                    <div className="hamburger" onClick={toggleNavbar}>
                         <i className="fa-solid fa-bars-staggered" data-visible={!isVisible}></i>
                         <i className="fa-solid fa-xmark" data-visible={isVisible}></i>
                     </div>
