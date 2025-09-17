@@ -23,15 +23,6 @@ export default function Portfolio() {
             <div className="grid-col col1"></div>
           </div>
         </a>
-        <a
-          href="https://My-Simpsons-Quotes-App.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="simpsons-quote">
-            <div className="grid-col col2"></div>
-          </div>
-        </a>
       </div>
 
       <div className="grid-header">
