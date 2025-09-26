@@ -11,11 +11,14 @@ export default function Footer() {
           <h6>{t('footer.back_to_top')}</h6>
         </div>
         <div className="social">
-          <a href="https://github.com/Charlesss10" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Charlesss10" title="GitHub Profile" target="_blank" rel="noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/charles-eboson" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/charles-eboson" title="LinkedIn Profile" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://storage.googleapis.com/cv_eboson_charles/cv_eboson_charles.pdf" title="Download CV/Resume" target="_blank" rel="noreferrer">
+            <i className="fa-solid fa-id-card"></i>
           </a>
         </div>
         <p>

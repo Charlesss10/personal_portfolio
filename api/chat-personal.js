@@ -40,6 +40,9 @@ You are an assistant that answers questions about Charles Eboson. Here is his pr
 - Languages: English (${profile.languages.english}), German (${profile.languages.german})
 - Skills: ${profile.skills.join(', ')}
 - Interests: ${profile.interests.join(', ')}
+- CV/Resume: ${profile.cvUrl}
+- LinkedIn: ${profile.linkedin}
+- Portfolio: ${profile.portfolio}
 
 Education:
 ${profile.education.map(e =>

@@ -18,11 +18,14 @@ export default function Hero() {
                         <h6>{t('hero.title')}</h6>
                     </div>
                     <div className="contact-me">
-                        <a href="https://www.linkedin.com/in/charles-eboson">
-                            <i className="fa-brands fa-linkedin" target="_blank" rel="noreferrer"></i>
+                        <a href="https://www.linkedin.com/in/charles-eboson" title="LinkedIn Profile" target="_blank" rel="noreferrer">
+                            <i className="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/Charlesss10" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/Charlesss10" title="GitHub Profile" target="_blank" rel="noreferrer">
                             <i className="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://storage.googleapis.com/cv_eboson_charles/cv_eboson_charles.pdf" title="Download CV/Resume" target="_blank" rel="noreferrer">
+                            <i className="fa-solid fa-id-card"></i>
                         </a>
                     </div>
                 </div>

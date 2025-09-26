@@ -6,6 +6,8 @@
     "location": "Hamburg, Germany",
     "github": "https://github.com/Charlesss10",
     "portfolio": "https://www.charles-eboson.com/",
+    "cvUrl": "https://storage.googleapis.com/cv_eboson_charles/cv_eboson_charles.pdf",
+    "linkedin": "https://www.linkedin.com/in/charles-eboson/",
     "certificates": [
         "HAW LSL certificate of recognition",
         "West African Secondary School Leaving Certificate"
@@ -88,10 +90,12 @@
         "C",
         "Java",
         "LaTeX",
-        "AWS",
-        "Google Cloud Platform",
-        "MySQL",
+        "AWS Amplify",
+        "Google Cloud Platform (GCP)",
+        "SQL",
         "React",
-        "Yarn"
+        "Yarn",
+        "Make.com",
+        "Zapier"
     ]
 }
