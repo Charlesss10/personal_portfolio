@@ -23,6 +23,15 @@ export default function Portfolio() {
             <div className="grid-col col1"></div>
           </div>
         </a>
+        <a
+          href="https://expense-tracker-git-dev-charles-s-team.vercel.app/login"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="expense-tracker">
+            <div className="grid-col col2"></div>
+          </div>
+        </a>
       </div>
 
       <div className="grid-header">
