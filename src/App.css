@@ -355,11 +355,6 @@ header {
   ;
 }
 
-.grid-port .col2 {
-  background: url(./images/project_1.png) center / cover no-repeat;
-  ;
-}
-
 .contact {
   margin-top: 8.875rem;
   display: flex;

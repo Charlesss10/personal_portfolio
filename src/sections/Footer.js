@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
         <p>
-          © 2024 Charles Aluminium Designed by{" "}
+          © 2025 Charles Eboson's Personal Portfolio Designed by{" "}
           <a
             href="https://www.linkedin.com/in/charles-eboson/"
             target="_blank"
